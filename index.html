@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -33,7 +34,9 @@
 
 <main>
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 <section id="home" class="hero">
   <div class="wrap hero-grid">
 
@@ -82,7 +85,9 @@
 </section>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================= -->
 <section id="about" class="section">
   <div class="wrap narrow">
 
@@ -119,7 +124,9 @@
 </section>
 
 
-<!-- EXPERIENCE -->
+<!-- =========================
+     EXPERIENCE
+========================= -->
 <section id="experience" class="section gray">
   <div class="wrap">
 
@@ -278,7 +285,9 @@
 </section>
 
 
-<!-- PROJECTS -->
+<!-- =========================
+     PROJECTS
+========================= -->
 <section id="projects" class="section">
   <div class="wrap">
 
@@ -287,7 +296,9 @@
     <h2>Selected Project Experience</h2>
 
 
-    <!-- SOLAR PV -->
+    <!-- =====================
+         SOLAR PV
+    ====================== -->
     <div class="group">
 
       <span class="tag">SOLAR PV</span>
@@ -301,13 +312,16 @@
 
       <div class="cards">
 
-        <!-- SOLAR PHOTO 01 -->
-        <article>
+
+        <!-- =================
+             SOLAR PROJECT 01
+        ================== -->
+        <article class="project-card">
 
           <div class="photo-slot">
             <img
               src="images/projects/solar/solar-01.jpg"
-              alt="Solar PV installation project"
+              alt="Residential Solar PV installation — 7.08 kWp"
             >
           </div>
 
@@ -322,11 +336,21 @@
             testing &amp; commissioning
           </small>
 
+          <button
+            class="gallery-btn"
+            type="button"
+            data-gallery="residential-7kwp"
+          >
+            View Project Photos
+          </button>
+
         </article>
 
 
-        <!-- SOLAR PHOTO 02 -->
-        <article>
+        <!-- =================
+             SOLAR PROJECT 02
+        ================== -->
+        <article class="project-card">
 
           <div class="photo-slot">
             PHOTO 02
@@ -345,8 +369,10 @@
         </article>
 
 
-        <!-- SOLAR PHOTO 03 -->
-        <article>
+        <!-- =================
+             SOLAR PROJECT 03
+        ================== -->
+        <article class="project-card">
 
           <div class="photo-slot">
             PHOTO 03
@@ -365,8 +391,10 @@
         </article>
 
 
-        <!-- SOLAR PHOTO 04 -->
-        <article>
+        <!-- =================
+             SOLAR PROJECT 04
+        ================== -->
+        <article class="project-card">
 
           <div class="photo-slot">
             PHOTO 04
@@ -385,8 +413,10 @@
         </article>
 
 
-        <!-- SOLAR PHOTO 05 -->
-        <article>
+        <!-- =================
+             SOLAR PROJECT 05
+        ================== -->
+        <article class="project-card">
 
           <div class="photo-slot">
             PHOTO 05
@@ -411,7 +441,9 @@
     </div>
 
 
-    <!-- RURAL ELECTRIFICATION -->
+    <!-- =====================
+         RURAL ELECTRIFICATION
+    ====================== -->
     <div class="group">
 
       <span class="tag">LOT-42</span>
@@ -491,7 +523,9 @@
     </div>
 
 
-    <!-- POSCO -->
+    <!-- =====================
+         POSCO
+    ====================== -->
     <div class="group">
 
       <span class="tag">POSCO INTERNATIONAL</span>
@@ -525,7 +559,9 @@
 </section>
 
 
-<!-- SKILLS -->
+<!-- =========================
+     SKILLS
+========================= -->
 <section id="skills" class="section gray">
   <div class="wrap">
 
@@ -632,7 +668,9 @@
 </section>
 
 
-<!-- EDUCATION -->
+<!-- =========================
+     EDUCATION
+========================= -->
 <section id="education" class="section">
   <div class="wrap">
 
@@ -696,7 +734,9 @@
 </section>
 
 
-<!-- PROFESSIONAL DEVELOPMENT -->
+<!-- =========================
+     PROFESSIONAL DEVELOPMENT
+========================= -->
 <section id="development" class="section gray">
 
   <div class="wrap">
@@ -741,7 +781,9 @@
 </section>
 
 
-<!-- RESUME -->
+<!-- =========================
+     RESUME
+========================= -->
 <section id="resume" class="section">
 
   <div class="wrap resume">
@@ -774,7 +816,9 @@
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 <section id="contact" class="section contact">
 
   <div class="wrap narrow">
@@ -828,6 +872,84 @@
 </main>
 
 
+<!-- =========================
+     PROJECT GALLERY MODAL
+========================= -->
+<div
+  id="galleryModal"
+  class="gallery-modal"
+  aria-hidden="true"
+>
+
+  <div class="gallery-overlay"></div>
+
+  <div
+    class="gallery-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="galleryTitle"
+  >
+
+    <button
+      class="gallery-close"
+      type="button"
+      aria-label="Close project gallery"
+    >
+      ×
+    </button>
+
+    <div class="gallery-header">
+
+      <h2 id="galleryTitle">
+        Residential — 7.08 kWp
+      </h2>
+
+      <p id="galleryCounter">
+        1 / 1
+      </p>
+
+    </div>
+
+
+    <div class="gallery-main">
+
+      <button
+        class="gallery-prev"
+        type="button"
+        aria-label="Previous photo"
+      >
+        ‹
+      </button>
+
+
+      <img
+        id="galleryImage"
+        src=""
+        alt="Residential Solar PV project photo"
+      >
+
+
+      <button
+        class="gallery-next"
+        type="button"
+        aria-label="Next photo"
+      >
+        ›
+      </button>
+
+    </div>
+
+
+    <div
+      id="galleryThumbnails"
+      class="gallery-thumbnails"
+    ></div>
+
+  </div>
+
+</div>
+
+
 <footer>
 
   <div class="wrap">
@@ -849,5 +971,221 @@
 
 <script src="js/main.js"></script>
 
+<script>
+/*
+  ==========================================
+  Residential 7.08 kWp Project Gallery
+  ==========================================
+*/
+
+const projectGalleries = {
+
+  "residential-7kwp": {
+    title: "Residential — 7.08 kWp",
+
+    images: [
+      "images/projects/solar/residential-7kwp/01.jpg",
+      "images/projects/solar/residential-7kwp/02.jpg",
+      "images/projects/solar/residential-7kwp/03.jpg",
+      "images/projects/solar/residential-7kwp/04.jpg",
+      "images/projects/solar/residential-7kwp/05.jpg"
+    ]
+
+  }
+
+};
+
+
+const galleryModal = document.getElementById("galleryModal");
+const galleryImage = document.getElementById("galleryImage");
+const galleryTitle = document.getElementById("galleryTitle");
+const galleryCounter = document.getElementById("galleryCounter");
+const galleryThumbnails = document.getElementById("galleryThumbnails");
+
+const galleryClose = document.querySelector(".gallery-close");
+const galleryPrev = document.querySelector(".gallery-prev");
+const galleryNext = document.querySelector(".gallery-next");
+
+let activeGallery = null;
+let activeIndex = 0;
+
+
+/* Open gallery */
+document.querySelectorAll("[data-gallery]").forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const galleryName = button.dataset.gallery;
+
+    if (!projectGalleries[galleryName]) {
+      return;
+    }
+
+    activeGallery = projectGalleries[galleryName];
+    activeIndex = 0;
+
+    galleryTitle.textContent = activeGallery.title;
+
+    renderGallery();
+
+    galleryModal.classList.add("open");
+    galleryModal.setAttribute("aria-hidden", "false");
+
+    document.body.classList.add("gallery-open");
+
+  });
+
+});
+
+
+/* Render current photo */
+function renderGallery() {
+
+  if (!activeGallery) {
+    return;
+  }
+
+  const currentImage = activeGallery.images[activeIndex];
+
+  galleryImage.src = currentImage;
+
+  galleryImage.alt =
+    activeGallery.title + " — Project Photo " + (activeIndex + 1);
+
+  galleryCounter.textContent =
+    (activeIndex + 1) + " / " + activeGallery.images.length;
+
+
+  galleryThumbnails.innerHTML = "";
+
+
+  activeGallery.images.forEach((image, index) => {
+
+    const thumbnail = document.createElement("button");
+
+    thumbnail.type = "button";
+
+    thumbnail.className = "gallery-thumbnail";
+
+    if (index === activeIndex) {
+      thumbnail.classList.add("active");
+    }
+
+    const thumbnailImage = document.createElement("img");
+
+    thumbnailImage.src = image;
+
+    thumbnailImage.alt =
+      "Project photo " + (index + 1);
+
+    thumbnail.appendChild(thumbnailImage);
+
+    thumbnail.addEventListener("click", () => {
+
+      activeIndex = index;
+
+      renderGallery();
+
+    });
+
+    galleryThumbnails.appendChild(thumbnail);
+
+  });
+
+}
+
+
+/* Previous */
+galleryPrev.addEventListener("click", () => {
+
+  if (!activeGallery) {
+    return;
+  }
+
+  activeIndex--;
+
+  if (activeIndex < 0) {
+    activeIndex = activeGallery.images.length - 1;
+  }
+
+  renderGallery();
+
+});
+
+
+/* Next */
+galleryNext.addEventListener("click", () => {
+
+  if (!activeGallery) {
+    return;
+  }
+
+  activeIndex++;
+
+  if (activeIndex >= activeGallery.images.length) {
+    activeIndex = 0;
+  }
+
+  renderGallery();
+
+});
+
+
+/* Close button */
+galleryClose.addEventListener("click", closeGallery);
+
+
+/* Background overlay */
+document.querySelector(".gallery-overlay").addEventListener(
+  "click",
+  closeGallery
+);
+
+
+/* ESC key */
+document.addEventListener("keydown", event => {
+
+  if (
+    event.key === "Escape" &&
+    galleryModal.classList.contains("open")
+  ) {
+
+    closeGallery();
+
+  }
+
+});
+
+
+/* Keyboard navigation */
+document.addEventListener("keydown", event => {
+
+  if (!galleryModal.classList.contains("open")) {
+    return;
+  }
+
+  if (event.key === "ArrowLeft") {
+    galleryPrev.click();
+  }
+
+  if (event.key === "ArrowRight") {
+    galleryNext.click();
+  }
+
+});
+
+
+function closeGallery() {
+
+  galleryModal.classList.remove("open");
+
+  galleryModal.setAttribute("aria-hidden", "true");
+
+  document.body.classList.remove("gallery-open");
+
+}
+</script>
+
 </body>
 </html>
+```
