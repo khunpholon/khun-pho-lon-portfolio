@@ -754,3 +754,109 @@ body.gallery-open {
   }
 
 }
+
+/* =========================================
+   PROJECT CARD POLISH
+========================================= */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card .photo-slot {
+  width: 100%;
+  height: 190px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #eef2f6;
+}
+
+.project-card .photo-slot img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-card h4 {
+  margin: 0 0 7px;
+  line-height: 1.35;
+}
+
+.project-card p {
+  margin: 0 0 8px;
+}
+
+.project-card small {
+  display: block;
+  line-height: 1.55;
+}
+
+.project-card .gallery-btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+
+/* =========================================
+   RURAL / POSCO PROJECT PHOTOS
+========================================= */
+
+.wide .photo-slot {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.wide .photo-slot img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* Make LOT-42 project cards consistent */
+
+.cards.two .project-card {
+  min-height: 100%;
+}
+
+.cards.two .project-card .gallery-btn {
+  margin-top: 20px;
+}
+
+
+/* =========================================
+   PROJECT BUTTON
+========================================= */
+
+.project-card .gallery-btn,
+.cards.two .gallery-btn,
+.wide .gallery-btn {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+
+/* =========================================
+   MOBILE PROJECT PHOTOS
+========================================= */
+
+@media (max-width: 800px) {
+
+  .project-card .photo-slot {
+    height: 210px;
+  }
+
+  .wide .photo-slot {
+    height: 230px;
+  }
+
+}
